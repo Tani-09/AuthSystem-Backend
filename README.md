@@ -119,33 +119,33 @@ AuthSystem.Infrastructure → DB, Redis, Email, Token Services
 ---
 
 ## 📁 Project Structure
+
+```
 AuthSystem.API/
-├── Controllers/
-│   └── AuthController.cs
-├── Middleware/
-│   └── ExceptionMiddleware.cs
-├── Program.cs
+├── Controllers/AuthController.cs
+├── Middleware/ExceptionMiddleware.cs
+└── Program.cs
+
 AuthSystem.Application/
 ├── DTOs/
-├── Services/
-│   └── IUserService.cs
-├── Responses/
+├── Services/IUserService.cs
+└── Responses/
+
 AuthSystem.Domain/
-├── Entities/
-│   ├── User.cs
-│   ├── RefreshToken.cs
-│   └── Role.cs
+└── Entities/
+    ├── User.cs
+    ├── RefreshToken.cs
+    └── Role.cs
+
 AuthSystem.Infrastructure/
-├── Data/
-│   └── AuthDbContext.cs
+├── Data/AuthDbContext.cs
 ├── Services/
 │   ├── UserService.cs
 │   ├── TokenService.cs
 │   ├── EmailService.cs
 │   └── RedisService.cs
-├── Security/
-│   └── PasswordHasherService.cs
-
+└── Security/PasswordHasherService.cs
+```
 ---
 
 ## 🚀 How to Run Locally
